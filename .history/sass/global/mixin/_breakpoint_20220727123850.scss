@@ -1,0 +1,17 @@
+//ブレイクポイントの種類を定義
+$breakPoints: (
+  ‘pc’: ‘1280px’,
+  ‘tablet’: ‘768px’,
+  ‘sp’: ‘480px’,
+);!default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin font-size($size) {
+  font-size: $size + px;
+  font-size: ($size / 16) * 1rem;
+}

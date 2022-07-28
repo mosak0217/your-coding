@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@use "../global" as g;
+
+html {
+  font-size: 100%;
+}
+
+body {
+  line-height: 1.8;
+  background-color: g.$color-primary;
+  letter-spacing: 0.05em;
+  @include g.font-size(15);
+  @include g.mq(md) {
+    @include g.font-size(14);
+  }
+}
+
+a {
+  transition: 0.3s;
+  text-decoration: none;
+  color: g.$color-primary;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+

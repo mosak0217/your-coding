@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@use "../global/" as g;
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

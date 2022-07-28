@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@use "../global" as g;
+
+html {
+  font-size: 100%;
+}
+
+body {
+  
+  }
+}
+
+a {
+  transition: 0.3s;
+  text-decoration: none;
+  color: g.$color-primary;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+

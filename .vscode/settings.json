@@ -1,0 +1,23 @@
+{
+  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded", //nested、compact、compressedのどれかを選ぶ
+      "extensionName": ".css", //style.cssとして出力
+      "savePath": "/css" //cssフォルダの中にstyle.cssを出力
+    },
+  ],
+  "liveSassCompile.settings.autoprefix": [
+    
+    "> 3% in JP",
+    "last 2 versions"
+  ],
+  "liveSassCompile.settings.excludeList": [ //対象外とするフォルダを指定
+    "**/node_modules/**",
+    ".vscode/**",
+    ".history/**"
+  ],
+  
+  
+  
+}
