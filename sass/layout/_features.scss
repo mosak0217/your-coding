@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@use "../global/" as g;
+
+
+// features
+
+.features-cont-title {
+  @include g.font-size(28);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 65px;
+    padding-bottom: 108px;
+
+}
+.features-cont-title-top {
+    padding-top: 0;
+}
+
+.features-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+
+  img {
+    width: calc(50% - 157px);
+  }
+}
+.featuers-reverse {
+  flex-direction: row-reverse;  
+
+}
+
+.features-txtarea {
+  width: 50%;
+
+  .features-txtarea-concept {
+    @include g.font-size(24);
+    font-weight: bold;
+
+  }
+  p {
+    padding-top: 54px;
+    @include g.font-size(16);
+    font-weight: bold;
+  }
+
+}

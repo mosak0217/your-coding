@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@use "../global/" as g;
+
+
+#price {
+  background: g.$color-primary-blue;
+  width: 100%;
+  text-align: center;
+}
+
+
+

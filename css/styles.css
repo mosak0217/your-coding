@@ -1,3 +1,55 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  color: #333333;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+
+a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.sec-title {
+  font-size: 32px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.sec-title-en {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3BA6C9;
+  text-align: center;
+  padding-bottom: 64px;
+}
+
 *,
 ::before,
 ::after {
@@ -382,6 +434,12 @@ th {
 
 .header {
   width: 100%;
+  background: #FFFFFF;
+  position: fixed;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+.header .header-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,10 +449,164 @@ th {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 94px;
+}
+
+.header-logo {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header-logo img {
+  padding-right: 24px;
+}
+
+.header-nav .header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-nav .header-menu .header-nav-item {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-right: 46px;
+}
+
+.header .wrapper {
+  padding-bottom: 0;
+}
+
+#mv {
+  width: 100%;
+  background-image: url(/img/mv-back-cont.png);
+  background-repeat: no-repeat;
+  background-position: right -85px;
+}
+#mv .wrapper {
+  height: 674px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mv-left {
+  width: 50%;
+}
+.mv-left .sec-title {
+  text-align: left;
+}
+.mv-left p {
+  padding-top: 38px;
+  padding-bottom: 51px;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.mv-right {
+  width: 50%;
+}
+.mv-right img {
+  padding-left: 133px;
 }
 
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 15px;
+  padding-bottom: 80px;
+}
+
+.features-cont-title {
+  font-size: 28px;
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 65px;
+  padding-bottom: 108px;
+}
+
+.features-cont-title-top {
+  padding-top: 0;
+}
+
+.features-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.features-cont img {
+  width: calc(50% - 157px);
+}
+
+.featuers-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.features-txtarea {
+  width: 50%;
+}
+.features-txtarea .features-txtarea-concept {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.features-txtarea p {
+  padding-top: 54px;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#price {
+  background: #EEFBFB;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: -webkit-gradient(linear, left top, right top, from(#FA41CC), color-stop(51%, #AF31BE), to(#6020B0));
+  background: linear-gradient(to right, #FA41CC 0%, #AF31BE 51%, #6020B0 100%);
+  padding: 12px 36px;
+  -webkit-box-shadow: 0 3px 6px;
+          box-shadow: 0 3px 6px;
+  border-radius: 10px;
+}
+
+.price-table {
+  width: 100%;
+  font-size: 16px;
+  font-size: 1rem;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.price-table tr .table-title {
+  border: 1px solid #E5E5E5;
+  width: 28%;
+  padding: 40px 36px 35px 19px;
+}
+.price-table tr .table-price {
+  width: 82%;
+  border: 1px solid #E5E5E5;
 }/*# sourceMappingURL=styles.css.map */

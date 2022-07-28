@@ -1,10 +1,44 @@
 @charset "UTF-8";
 
-@use "../global/" as g;
+@use "../global" as g;
 
 .header {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background: g.$color-primary;
+  position: fixed;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 94px;
+  }
+}
+
+.header-logo {
+  @include g.font-size(24);
+  font-weight: bold;
+
+  img {
+    padding-right: 24px;
+  }
+}
+
+.header-nav {
+  .header-menu {
+    display: flex;
+
+    .header-nav-item {
+      @include g.font-size(16);
+      font-weight: bold;
+      padding-right: 46px;
+    }
+  }
+}
+
+.header {
+  .wrapper {
+    padding-bottom: 0;
+  }
 }

@@ -10,9 +10,9 @@ body {
   font-family:"Noto Sans JP", sans-serif;
   line-height: 1.8;
   letter-spacing: 0.05em;
-  color: g.$color-primary;
+  color: g.$color-text;
   @include g.font-size(15);
-  @include g.mq(md) {
+  @include g.mq(tab) {
   @include g.font-size(14);
   }
 }
@@ -20,7 +20,7 @@ body {
 a {
   transition: 0.3s;
   text-decoration: none;
-  color: s.$color-primary;
+  color: g.$color-primary;
   &:hover {
     opacity: 0.7;
   }
@@ -30,5 +30,20 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: bottom;
+}
+
+.sec-title {
+  @include g.font-size(32);
+  font-weight: bold;
+  text-align: center;
+  padding-top: 80px
+}
+
+.sec-title-en {
+  @include g.font-size(16);
+  font-weight: bold;
+  color: g.$color-title-blue;
+  text-align: center;
+  padding-bottom: 64px;
 }
 

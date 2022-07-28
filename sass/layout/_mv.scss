@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@use "../global/" as g;
+
+// メインビュー
+
+#mv {
+  width: 100%;
+  background-image: url(/img/mv-back-cont.png);
+  background-repeat: no-repeat;
+  background-position: right -85px;
+  .wrapper {
+    height: 674px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.mv-left {
+  width: 50%;
+
+  .sec-title {
+    text-align: left;
+  }
+
+  p {
+    padding-top: 38px;
+    padding-bottom: 51px;
+    @include g.font-size(16);
+    font-weight: bold;
+
+  }
+
+}
+
+.mv-right {
+  width: 50%;
+
+  img {
+    padding-left: 133px;
+  }
+}
+

@@ -1,3 +1,19 @@
 @charset "UTF-8";
 
 @use "../global/" as g;
+
+
+@mixin btn {
+  display: inline-block;
+  font-weight: bold;
+  color: g.$color-primary;
+  background: g.$color-btn;
+  padding: 12px 36px;
+  box-shadow: 0 3px 6px;
+  border-radius: 10px;
+}
+
+.btn {
+  @include btn;
+}
+

@@ -1,3 +1,41 @@
 @charset "UTF-8";
 
 @use "../global/" as g;
+
+
+.price-table {
+  width: 100%;
+  @include g.font-size(16);
+  background: g.$color-primary;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  table-layout: fixed;
+
+  tr {
+    width: 100%;
+
+    .table-title {
+      border: 1px solid #E5E5E5;
+      width: 30%;
+      vertical-align: middle;
+      text-align: left;
+      padding: 40px 19px;
+      
+  
+    }
+  
+    .table-text {
+      width: 70%;
+      border: 1px solid #E5E5E5;
+      vertical-align: middle;
+      text-align: left;
+      padding: 40px 30px;
+     
+    }
+  }
+
+}
+
+.alert {
+  padding-top: 41px;
+
+}
