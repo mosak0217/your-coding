@@ -2,3 +2,38 @@
 
 @use "../global" as g;
 
+.accordion {
+  
+}
+.accordion dt {
+  position: relative;
+  text-align: center;
+  @include g.font-size(14);
+  padding: 22px 0;
+  border: 1px solid #E5E5E5;
+}
+
+.accordion dt::after {
+  position: absolute;
+  content: "\03e";
+  right: 15px;
+  transition: 0.3s;
+}
+.accordion dt.open::after {
+  transform: rotate(90deg);
+}
+
+.accordion dd {
+  opacity: 0;
+  height: 0;
+  transition: 0.3s;
+  background: #F2F2F2;
+}
+.accordion dd.open {
+  opacity: 1;
+  height: auto;
+  padding: 28px 37px;
+  @include g.font-size(14);
+  font-weight: bold;
+ 
+}

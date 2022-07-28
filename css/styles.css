@@ -573,6 +573,19 @@ th {
 
 #price {
   background: #EEFBFB;
+  width: 100%;
+  text-align: center;
+}
+
+.alert {
+  font-weight: bold;
+  padding-top: 41px;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+#blog {
+  background: #EEFBFB;
 }
 
 .btn {
@@ -587,6 +600,10 @@ th {
   border-radius: 10px;
 }
 
+.card {
+  background: #FFFFFF;
+}
+
 .price-table {
   width: 100%;
   font-size: 16px;
@@ -594,19 +611,61 @@ th {
   background: #FFFFFF;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  table-layout: fixed;
+}
+.price-table tr {
+  width: 100%;
 }
 .price-table tr .table-title {
   border: 1px solid #E5E5E5;
-  width: 28%;
-  padding: 40px 36px 35px 19px;
+  width: 30%;
+  vertical-align: middle;
+  text-align: left;
+  padding: 40px 19px;
 }
-.price-table tr .table-price {
-  width: 82%;
+.price-table tr .table-text {
+  width: 70%;
   border: 1px solid #E5E5E5;
+  vertical-align: middle;
+  text-align: left;
+  padding: 40px 30px;
+}
+
+.accordion dt {
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 22px 0;
+  border: 1px solid #E5E5E5;
+}
+
+.accordion dt::after {
+  position: absolute;
+  content: ">";
+  right: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.accordion dt.open::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.accordion dd {
+  opacity: 0;
+  height: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #F2F2F2;
+}
+
+.accordion dd.open {
+  opacity: 1;
+  height: auto;
+  padding: 28px 37px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
 }/*# sourceMappingURL=styles.css.map */
