@@ -380,26 +380,8 @@ th {
   font-weight: bold;
 }
 
-html {
-  font-size: 100%;
-}
-
-a {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: bottom;
-}
-
 .header {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
