@@ -587,6 +587,37 @@ th {
 #blog {
   background: #EEFBFB;
 }
+#blog .wrapper {
+  max-width: 1230px;
+}
+
+.blog-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+.blog-inner .card {
+  width: 33.3333333333%;
+  position: relative;
+}
+.blog-inner .card p {
+  font-size: 18px;
+  font-size: 1.125rem;
+  padding: 19px 18px;
+  position: relative;
+}
+.blog-inner .card time {
+  font-size: 16px;
+  font-size: 1rem;
+  display: block;
+  text-align: right;
+  padding-right: 36px;
+  padding-bottom: 12px;
+}
 
 .btn {
   display: inline-block;
@@ -601,7 +632,14 @@ th {
 }
 
 .card {
+  display: inline-block;
+  width: 100%;
+  height: auto;
   background: #FFFFFF;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  color: #333333;
+  font-weight: bold;
 }
 
 .price-table {
@@ -629,6 +667,10 @@ th {
   vertical-align: middle;
   text-align: left;
   padding: 40px 30px;
+}
+
+.accordion {
+  width: 100%;
 }
 
 .accordion dt {

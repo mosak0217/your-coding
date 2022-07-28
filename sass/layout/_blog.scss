@@ -4,4 +4,37 @@
 
 #blog {
   background: g.$color-primary-blue;
+
+  .wrapper {
+    max-width: 1230px;
+  }
+
+}
+
+.blog-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  .card {
+    width: calc(100% / 3);
+    position: relative;
+
+    p {
+      @include g.font-size(18);
+      padding: 19px 18px;
+      position: relative;
+    }
+    time {
+      @include g.font-size(16);
+      display: block;
+      text-align: right;
+      padding-right: 36px;
+      padding-bottom: 12px;
+      
+      
+     
+    }
+    
+  }
 }
