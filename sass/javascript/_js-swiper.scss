@@ -3,17 +3,27 @@
 @use "../global" as g;
 
 
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 80px;
+}
+
 .swiper-wrapper {
+  width: 100%;
   gap: 30px;
 }
 
 .swiper-slide {
+  height: auto;
+ 
   .card {
+    width: 100%;
     border-radius: 20px;
 
     img {
       width: 100%;
-      height: auto;
+      height: 250px;
     }
 
   }
@@ -21,10 +31,12 @@
 
 .works-card-ttl {
   padding: 24px 17px 34px 18px;
+  @include g.font-size(16);
 }
 
 .works-card-txt {
   padding-left: 18px;
+  @include g.font-size(14);
 
 }
 .works-card-txt:last-child {

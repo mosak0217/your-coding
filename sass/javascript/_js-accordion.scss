@@ -36,5 +36,7 @@
   padding: 28px 37px;
   @include g.font-size(14);
   font-weight: bold;
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
  
 }

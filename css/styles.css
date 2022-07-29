@@ -484,7 +484,7 @@ th {
   width: 100%;
   background-image: url(/img/mv-back-cont.png);
   background-repeat: no-repeat;
-  background-position: right -85px;
+  background-position: top -124px right -85px;
 }
 #mv .wrapper {
   height: 674px;
@@ -760,6 +760,16 @@ textarea {
   -webkit-box-shadow: 0 3px 6px;
           box-shadow: 0 3px 6px;
   border-radius: 10px;
+  background-size: 100% auto;
+}
+
+.btn:hover {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  -webkit-box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  border-color: transparent;
+  opacity: 1;
 }
 
 .card {
@@ -791,6 +801,7 @@ textarea {
   vertical-align: middle;
   text-align: left;
   padding: 40px 19px;
+  font-weight: bold;
 }
 .price-table tr .table-text {
   width: 70%;
@@ -841,26 +852,43 @@ textarea {
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: bold;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 80px;
 }
 
 .swiper-wrapper {
+  width: 100%;
   gap: 30px;
 }
 
+.swiper-slide {
+  height: auto;
+}
 .swiper-slide .card {
+  width: 100%;
   border-radius: 20px;
 }
 .swiper-slide .card img {
   width: 100%;
-  height: auto;
+  height: 250px;
 }
 
 .works-card-ttl {
   padding: 24px 17px 34px 18px;
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 .works-card-txt {
   padding-left: 18px;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .works-card-txt:last-child {
