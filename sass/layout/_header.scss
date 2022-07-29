@@ -6,6 +6,7 @@
   width: 100%;
   background: g.$color-primary;
   position: fixed;
+  z-index: 100;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
 
   .header-inner {

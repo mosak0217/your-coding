@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/css/swiper.css" />
   <link rel="icon" href="img/header-logo.png">
   <title>Your-Coding</title>
 </head>
@@ -189,8 +190,9 @@
   <h2 class="sec-title">制作実績</h2>
     <p class="sec-title-en">WORKS</p>
 
-    <div class="swiper">
+    <div class="swiper-container">
       <div class="swiper-wrapper">
+
         <div class="swiper-slide">
           <div class="card">
             <img src="img/works1.jpg" alt="ワークス１画像">
@@ -201,6 +203,7 @@
               <p class="works-card-txt">担当コーダー：石井</p>
           </div><!--card-->
         </div><!--swiper-slide-->
+
         <div class="swiper-slide">
           <div class="card">
             <img src="img/works2.jpg" alt="ワークス2画像">
@@ -211,6 +214,7 @@
               <p class="works-card-txt">担当コーダー：石井</p>
           </div><!--card-->
         </div><!--swiper-slide-->
+
         <div class="swiper-slide">
           <div class="card">
             <img src="img/works3.jpg" alt="ワークス3画像">
@@ -221,6 +225,7 @@
               <p class="works-card-txt">担当コーダー：石井</p>
           </div><!--card-->
         </div><!--swiper-slide-->
+
         <div class="swiper-slide">
           <div class="card">
             <img src="img/works4.jpg" alt="ワークス4画像">
@@ -231,6 +236,7 @@
               <p class="works-card-txt">担当コーダー：石井</p>
           </div><!--card-->
         </div><!--swiper-slide-->
+
         <div class="swiper-slide">
           <div class="card">
             <img src="img/works5.jpg" alt="ワークス5画像">
@@ -273,11 +279,11 @@
         </div>
 
         <div class="privacy">
-        <label for="privacy_checkbox">
-          <input type="checkbox" id="privacy-checkbox" />プライバシーポリシーに同意する
+        <label class="privacy-label" for="privacy-checkbox">
+          <input class="privacy-checkbox" type="checkbox" id="privacy-checkbox" />プライバシーポリシーに同意する
           </label></div>
 
-        <div class="btn"><button type="submit">送信する</button></div>
+          <a class="btn" href="#contact">送信する</a>
 
       </form><!--form-->
   </div><!--wrapper-->
@@ -296,8 +302,7 @@
   <p class="copy-right">©ユアコーディング, All Rights Reserved.</p>
 </footer><!--footer-->
 
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+<script src="js/swiper.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

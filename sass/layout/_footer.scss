@@ -1,3 +1,33 @@
 @charset "UTF-8";
 
 @use "../global/" as g;
+
+
+#footer {
+  text-align: center;
+  padding: 50px 0;
+
+}
+
+.footer-nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .footer-item {
+    padding-left: 30px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 59px;
+    @include g.font-size(16);
+  }
+  .footer-item:first-child {
+    padding-left: 0;
+  }
+
+
+}
+
+.copy-right {
+  @include g.font-size(14);
+}

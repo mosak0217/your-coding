@@ -1,3 +1,36 @@
 @charset "UTF-8";
 
 @use "../global" as g;
+
+
+.swiper-wrapper {
+  gap: 30px;
+}
+
+.swiper-slide {
+  .card {
+    border-radius: 20px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+}
+
+.works-card-ttl {
+  padding: 24px 17px 34px 18px;
+}
+
+.works-card-txt {
+  padding-left: 18px;
+
+}
+.works-card-txt:last-child {
+  padding-bottom: 34px;
+
+}
+
+
+

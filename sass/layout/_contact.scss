@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@use "../global/" as g;
+
+#contact {
+  background: g.$color-contact-back-blue;
+  .sec-title {
+    color: g.$color-primary;
+
+  }
+  .sec-title-en {
+    color: g.$color-primary;
+    padding-bottom: 42px;
+  }
+}
+
+.contact-attention {
+  color: g.$color-primary;
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+#contact {
+  form {
+    width: 100%;
+    height: auto;
+    background: g.$color-primary;
+  }
+  .btn {
+   display: block;
+   margin: 0 auto;
+   text-align: center;
+   width: 155px;
+   
+    
+  }
+}
+
+form {
+  padding-bottom: 35px;
+  
+  label[for] {
+    display: block;
+    font-weight: bold;
+    padding-top: 32px;
+    padding-left: 62px;
+
+  }
+  label::after {
+    content: "必須";
+  color: g.$color-primary;
+  background: g.$color-contact-tagBlue;
+  vertical-align: middle;
+  @include g.font-size(14);
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 23px;
+  font-weight: bold;
+
+  }
+
+}
+
+.privacy {
+  display: inline-block;
+  margin: 0 auto;
+  padding-bottom: 33px;
+  text-align: center;
+  width: 100%;
+
+
+  .privacy-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+
+
+  label, input[type='checkbox'] {
+    cursor: pointer;
+}
+
+  label::after {
+    display: inline-block;
+    display: none;
+  }
+}
+
+input {
+  margin-top: 36px;
+  margin-left: 62px;
+  margin-right: 62px;
+  min-height: 43px;
+  background: g.$color-primary-blue;
+  width: 63%;
+  padding-left: 10px;
+}
+textarea {
+  margin-top: 36px;
+  margin-left: 62px;
+  min-height: 179px;
+  background: g.$color-primary-blue;
+  width: 80%;
+  padding-left: 10px;
+  padding-top: 10px;
+
+}
