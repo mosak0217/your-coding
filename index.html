@@ -15,7 +15,15 @@
 <header id="header" class="header">
   <div class="wrapper header-inner">
     <h1 class="header-logo"><a href="#"><img src="img/header-logo.png" alt="ヘッダーロゴ画像">ユアコーディング</a></h1>
-    <nav class="header-nav">
+
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+
+    <nav class="header-nav globalMenuSp">
       <ul class="header-menu">
         <li class="header-nav-item"><a href="#features">特徴</a></li>
         <li class="header-nav-item"><a href="#price">価格</a></li>
@@ -166,21 +174,21 @@
     <div class="blog-inner">
       <div data-aos="fade-down" class="card">
         <img src="img/blog1.png" alt="ブログ1画像">
-        <p>サイトをリニューアルオープンしました。</p>
+        <div class="card-inner"><p>サイトをリニューアルオープンしました。</p></div>
         <time datetime="2020.01.23">2020.01.23</time>
       </div><!--card-->
 
       <div data-aos="fade-down" class="card">
         <img src="img/blog2.png" alt="ブログ2画像">
-        <p>WebサイトでSEO内部施策に適したコー
+        <div class="card-inner"><p>WebサイトでSEO内部施策に適したコー
           ディングでどれぐらいサイトが早くなるの
-          か検証してみました</p>
+          か検証してみました</p></div>
         <time datetime="2020.01.24">2020.01.24</time>
       </div><!--card-->
 
       <div data-aos="fade-down" class="card">
         <img src="img/blog3.png" alt="ブログ3画像">
-        <p>サイトをリニューアルオープンしました。</p>
+        <div class="card-inner"><p>サイトをリニューアルオープンしました。</p></div>
         <time datetime="2020.01.25">2020.01.25</time>
       </div><!--card-->
 
@@ -266,6 +274,7 @@
       あなたの力になります</p>
 
       <form action="">
+        <div class="contact-list">
         <div class="name">
         <label for="name">お名前</label>
         <input placeholder="お名前" type="text" id="name" name="name"></div>
@@ -279,7 +288,7 @@
             <label for="content">お問い合わせ内容</label>
           </div>
           <textarea placeholder="お問い合わせ内容" id="content" name="content"></textarea>
-        </div>
+        </div></div>
 
         <div class="privacy">
         <label class="privacy-label" for="privacy-checkbox">
@@ -304,7 +313,7 @@
   </nav><!--footer-nav-->
   <p class="copy-right">©ユアコーディング, All Rights Reserved.</p>
 </footer><!--footer-->
-
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="js/swiper.js"></script>
 <script src="js/script.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

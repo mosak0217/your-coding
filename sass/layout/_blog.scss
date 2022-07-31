@@ -17,22 +17,67 @@
   gap: 30px;
 
   .card {
-    width: calc(100% / 3);
+    width: 100%;
+    max-width: 389px;
+    min-height: 360px;
     position: relative;
 
+    .card-inner {
+      padding: 19px 18px 36px 18px;
+
+    }
     p {
       @include g.font-size(18);
-      padding: 19px 18px 36px 18px;
     }
     time {
       @include g.font-size(16);
+      position: absolute;
       display: block;
       text-align: right;
-      position: absolute;
-      bottom: 12px;
-      right: 36px;
+      padding-right: 18px;
+      padding-bottom: 11px;
+      bottom: 0;
+      right: 0;
 
     }
+
     
   }
 }
+
+@include g.mq(pc) {
+  .blog-inner {
+    
+
+    .card {
+      p {
+        @include g.font-size(14);
+      }
+      time {
+        @include g.font-size(14);
+      }
+    }
+  }
+}
+@include g.mq(tab) {
+  .blog-inner {
+    flex-direction: column;
+    align-items: center;
+    
+
+    .card {
+      p {
+        @include g.font-size(14);
+      }
+      time {
+        @include g.font-size(14);
+      }
+    }
+  }
+}
+
+
+
+
+  
+    

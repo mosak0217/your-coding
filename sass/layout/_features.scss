@@ -27,9 +27,37 @@
     width: calc(50% - 157px);
   }
 }
+
+@include g.mq(pc) {
+  .features-cont {
+    width: 100%;
+    flex-direction: column;
+
+    img {
+      width: 80%;
+      padding-bottom: 24px;
+    }
+
+  }
+}
+
+
 .featuers-reverse {
   flex-direction: row-reverse;  
 
+}
+
+@include g.mq(pc) {
+  .featuers-reverse {
+    width: 100%;
+    flex-direction: column;
+
+    img {
+      width: 80%;
+      padding-bottom: 24px;
+    }
+
+  }
 }
 
 .features-txtarea {
@@ -44,6 +72,13 @@
     padding-top: 54px;
     @include g.font-size(16);
     font-weight: bold;
+  }
+
+}
+
+@include g.mq(pc) {
+  .features-txtarea {
+    width: 80%;
   }
 
 }

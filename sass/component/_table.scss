@@ -36,3 +36,33 @@
 
 }
 
+@include g.mq(tab) {
+
+  .price-table {
+
+    tr {
+      display: flex;
+      flex-direction: column;
+    }
+
+}
+}
+@include g.mq(tab) {
+
+  .price-table tr .table-title  {
+    width: 100%;
+    padding-bottom: 14px;
+    border-bottom: none;
+
+  }
+  .price-table tr .table-text  {
+    width: 100%;
+    padding-top: 0;
+    border-top: none;
+    padding-left: 19px;
+
+  }
+  
+}
+
+

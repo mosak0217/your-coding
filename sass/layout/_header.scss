@@ -9,12 +9,19 @@
   z-index: 100;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
 
-  .header-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 94px;
+  .wrapper {
+    padding-bottom: 0;
+
   }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 94px;
+    }
+  
+
 }
 
 .header-logo {
@@ -24,6 +31,16 @@
   img {
     padding-right: 24px;
   }
+}
+
+@include g.mq(tab) {
+
+  .header-logo {
+    @include g.font-size(20);
+    font-weight: bold;
+  
+  }
+
 }
 
 .header-nav {
@@ -38,8 +55,31 @@
   }
 }
 
-.header {
-  .wrapper {
-    padding-bottom: 0;
+@include g.mq(pc) {
+
+.header-nav {
+  .header-menu {
+    display: flex;
+    flex-direction: column;
+
+    .header-nav-item {
+      padding-right: 0;
+    }
+
+    
   }
+}
+}
+
+@include g.mq(pc) {
+
+  header {
+    .btn {
+      display: none;
+    }
+  }
+
+
+
+
 }

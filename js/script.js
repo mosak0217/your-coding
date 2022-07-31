@@ -1,5 +1,6 @@
-
 'use strict';
+
+
 
 
 const dt_tags = document.querySelectorAll('.accordion dt');
@@ -9,11 +10,8 @@ dt_tags.forEach(dt => {
         dt.nextElementSibling.classList.toggle('open');
     })
 
- 
 
-
-
-  var swiper = new Swiper(".swiper-container", {
+  const swiper = new Swiper(".swiper-container", {
     // Optional parameters
     autoplay: {
       delay: 3000,
@@ -34,7 +32,7 @@ dt_tags.forEach(dt => {
     },
     // スライドの表示枚数：768px以上の場合
     1025: {
-      slidesPerView: 3,
+      slidesPerView: 4,
     },
     // スライドの表示枚数：1025px以上の場合
     1025: {
@@ -42,12 +40,40 @@ dt_tags.forEach(dt => {
     },
     // スライドの表示枚数：1025px以上の場合
     1140: {
-      slidesPerView: 5,
+      slidesPerView: 4,
     },
   },
   
   });
 });
+
+// ハンバーガーボタン
+  
+$(function() {
+  $('.hamburger').click(function() {
+      $(this).toggleClass('active');
+
+      if ($(this).hasClass('active')) {
+          $('.globalMenuSp').addClass('active');
+      } else {
+          $('.globalMenuSp').removeClass('active');
+      }
+  });
+});
+
+// メニューが表示されている時に画面をクリックした場合
+$('.header-nav-item').on('click', function() {
+// ativeクラスを削除して、メニューを閉じる
+$('.globalMenuSp, .hamburger').removeClass('active').removeClass;
+});
+
+  
+
+
+
+
+ 
+
 
 
 

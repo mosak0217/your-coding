@@ -6,14 +6,34 @@
 
 #mv {
   width: 100%;
+  height: auto;
   background-image: url(/img/mv-back-cont.png);
   background-repeat: no-repeat;
-  background-position: top -124px right -85px;
+  position: relative;
+  background-position: top -300px right -80px;
   .wrapper {
-    height: 674px;
+    height: 100%;
     display: flex;
     align-items: center;
+    padding: 100px 20px;
+    padding-bottom: 0;
   }
+}
+
+@include g.mq(pc) {
+
+  #mv {
+    .wrapper {
+      flex-direction: column-reverse;
+      text-align: center;
+
+      .sec-title {
+        padding-top: 0;
+      }
+
+    }
+  }
+
 }
 
 .mv-left {
@@ -33,11 +53,37 @@
 
 }
 
+@include g.mq(pc) {
+  .mv-left {
+    width: 80%;
+
+  }
+
+
+}
+
+
+
+
+
 .mv-right {
   width: 50%;
 
   img {
     padding-left: 133px;
   }
+}
+
+@include g.mq(pc) {
+  .mv-right {
+    width: 100%;
+  
+    img {
+      padding-left: 0;
+      padding-bottom: 16px;
+    }
+  }
+
+
 }
 

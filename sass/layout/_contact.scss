@@ -44,8 +44,21 @@ form {
     font-weight: bold;
     padding-top: 32px;
     padding-left: 62px;
+    padding-right: 62px;
 
   }
+
+  @include g.mq(tab) {
+    label[for] {
+      padding-left: 10px;
+      padding-right: 0;
+  
+    }
+  }
+
+
+
+
   label::after {
     content: "必須";
   color: g.$color-primary;
@@ -58,6 +71,18 @@ form {
   margin-left: 23px;
   font-weight: bold;
 
+  }
+
+  @include g.mq(sp) {
+    label::after {
+    padding: 0;
+    margin-left: 0;
+    display: block;
+    width: 60px;
+    margin-top: 8px;
+    
+  
+    }
   }
 
 }
@@ -92,20 +117,36 @@ form {
 
 input {
   margin-top: 36px;
-  margin-left: 62px;
-  margin-right: 62px;
   min-height: 43px;
   background: g.$color-primary-blue;
   width: 63%;
   padding-left: 10px;
 }
+
+@include g.mq(tab) {
+ input {
+  width: 100%;
+ }
+}
+
+
+
 textarea {
   margin-top: 36px;
-  margin-left: 62px;
   min-height: 179px;
   background: g.$color-primary-blue;
-  width: 80%;
+  width: 100%;
   padding-left: 10px;
   padding-top: 10px;
+  padding-right: 10px;
 
+}
+@include g.mq(tab) {
+  textarea {
+   width: 100%;
+  }
+ }
+
+.contact-list {
+  margin: 0 62px;
 }
